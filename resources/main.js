@@ -1,12 +1,16 @@
+// declaring variables by targeting class
 const mainContainer = document.querySelector(".container-box");
 const thanksContainer = document.querySelector(".thank-you");
 
+// declaring variables by targeting id
 const submitButton = document.getElementById("submit");
 const rateAgain = document.getElementById("rate-again");
 const rating = document.getElementById("rating");
-// get the numbered buttons
+
+// get ALL the numbered buttons
 const rates = document.querySelectorAll(".btn");
 
+// action when submitting the main button
 submitButton.addEventListener("click", () => {
   // when click remove class hidden
   thanksContainer.classList.remove("hidden");
@@ -14,6 +18,7 @@ submitButton.addEventListener("click", () => {
   mainContainer.style.display = "none";
 });
 
+// action when submitting the rate again button
 rateAgain.addEventListener("click", () => {
   // when click add class hidden
   thanksContainer.classList.add("hidden");
@@ -21,6 +26,7 @@ rateAgain.addEventListener("click", () => {
   mainContainer.style.display = "block";
 });
 
+// action when choosing the numbered button
 rates.forEach((rate) => {
   // when clicking rating button
   rate.addEventListener("click", () => {

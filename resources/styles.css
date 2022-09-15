@@ -205,10 +205,12 @@ button:hover {
   color: var(--orange);
 }
 
+/* MEDIA QUERIES */
+
 @media only screen and (max-width: 600px) {
   .container-box {
     width: 90%;
-    height: 400px;
+    height: 500px;
   }
 
   .inner-contents {
@@ -220,7 +222,7 @@ button:hover {
 
   .thank-you {
     width: 90%;
-    height: 400px;
+    height: 500px;
   }
 
   .inner-contents__thank-you {
