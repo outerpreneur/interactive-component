@@ -35,6 +35,14 @@ body {
   border-radius: 25px;
 }
 
+.thank-you {
+  background-color: var(--dark-blue);
+  width: 30%;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 25px;
+}
+
 /* BOX 1 */
 
 .inner-contents {
@@ -92,15 +100,57 @@ button {
 }
 
 /* actives states */
-.score:hover {
+.ratings a span:hover {
   background-color: var(--light-gray);
+  color: var(--white);
 }
-.score p:hover {
+.ratings a span p:hover {
   color: var(--white);
 }
 
-.score:active {
+.ratings a span:focus {
   background-color: var(--orange);
 }
 
 /* BOX 2 */
+
+.inner-contents__thank-you {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: var(--font-family);
+}
+
+.inner-contents__thank-you img {
+  width: 170px;
+  margin: 30px auto;
+}
+
+.inner-contents__thank-you p,
+.inner-contents__thank-you h2,
+.inner-contents__thank-you .selection {
+  text-align: center;
+}
+
+.selection {
+  background-color: var(--very-dark-blue);
+  border-radius: 25px;
+}
+
+.selection p {
+  color: var(--orange);
+  font-weight: 400;
+}
+
+.outerbox {
+  display: flex;
+}
+
+.go-back {
+  width: 20%;
+  margin: 20px auto;
+}
+
+.hidden {
+  display: none;
+}
