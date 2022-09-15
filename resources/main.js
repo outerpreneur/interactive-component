@@ -30,6 +30,7 @@ rateAgain.addEventListener("click", () => {
 rates.forEach((rate) => {
   // when clicking rating button
   rate.addEventListener("click", () => {
+    submitButton.disabled = false;
     rating.innerHTML = rate.innerHTML;
   });
 });

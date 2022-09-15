@@ -141,6 +141,7 @@ button {
 button:hover {
   background-color: var(--white);
   color: var(--orange);
+  cursor: pointer;
 }
 
 /* actives states */
