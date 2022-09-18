@@ -85,6 +85,7 @@ p {
   list-style: none;
   justify-content: space-around;
   gap: 5px;
+  flex-wrap: wrap;
 }
 
 .btn {
