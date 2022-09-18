@@ -20,6 +20,8 @@ submitButton.addEventListener("click", () => {
 
 // action when submitting the rate again button
 rateAgain.addEventListener("click", () => {
+  // when clicking rate again button == disable submit button
+  submitButton.disabled = true;
   // when click add class hidden
   thanksContainer.classList.add("hidden");
   // when click show container box
@@ -30,6 +32,7 @@ rateAgain.addEventListener("click", () => {
 rates.forEach((rate) => {
   // when clicking rating button
   rate.addEventListener("click", () => {
+    // button disabled == false
     submitButton.disabled = false;
     rating.innerHTML = rate.innerHTML;
   });
