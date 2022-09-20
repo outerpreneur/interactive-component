@@ -12,6 +12,8 @@ const rating = document.getElementById("rating");
 // get ALL the numbered buttons
 const rates = document.querySelectorAll(".btn");
 
+
+
 // MAIN BUTTON CLICK EVENTS
 
 // action when submitting the main button
@@ -21,6 +23,8 @@ submitButton.addEventListener("click", () => {
   // when click remove container box
   mainContainer.style.display = "none";
 });
+
+
 
 // RATE AGAIN BUTTON CLICK EVENTS
 
@@ -33,6 +37,8 @@ rateAgain.addEventListener("click", () => {
   // when click show container box
   mainContainer.style.display = "block";
 });
+
+
 
 // RATINGS BUTTONS CLICK EVENTS
 
